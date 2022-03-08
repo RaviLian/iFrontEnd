@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>简历</title>
+  <style>
+    nav {
+      border-bottom: 1px solid black;
+    }
+
+    .anchor ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .anchor li{
+      display: inline-block;
+    }
+
+    .anchor a::after {
+      display: inline-block;
+      color: #000;
+      content: '|';
+      font-size: 80%;
+      font-weight: bold;
+      padding: 0 3px;
+    }
+  </style>
+</head>
+
+<body>
+
+  
+  <nav class="anchor">
+    <ul>
+      <li>
+        <a href="#a1">基本信息</a>
+      </li>
+      <li>
+        <a href="#a2">教育经历</a>
+      </li>
+      <li>
+        <a href="#a3">项目经历</a>
+      </li>
+      <li>
+        <a href="#a4">语言技能</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+  <header>
+    <h1>个人简历</h1>
+    <h2><a name="a1">Ravi</a></h2>
+    <p>Phone：188XXXX1234 ｜ Email：10xxxx0066@qq.com</p>
+    <p>生日：1995-06-23 ｜ 汉族 ｜ 北京海淀 ｜ 共青团员</p>
+  </header>
+  
+  <div class="content">
+    <section>
+      <h2><a name="a2">教育经历</a></h2>
+      <hr>
+      <p>
+        江西XX大学&nbsp;&nbsp;
+        计算机科学与技术&nbsp;&nbsp;
+        本科&nbsp;&nbsp;
+        2016年9月-2020年6月&nbsp;&nbsp;
+        GPA：3.8
+      </p>
+      <p>
+        北京XX大学&nbsp;&nbsp;
+        软件工程&nbsp;&nbsp;
+        硕士&nbsp;&nbsp;
+        2020年9月-2023年6月&nbsp;&nbsp;
+        GPA：3.7
+      </p>
+    </section>
+
+    <section>
+      <h2><a name="a3">项目经历</a></h2>
+      <hr>
+      <div class="project-info">
+        <p>
+          <strong>2019.12-2020.4</strong>&nbsp;&nbsp;<strong>基于jsp的社团管理系统</strong>
+        </p>
+
+        <p>项目内容:
+          担任java后端设计数据库关系表，使用jsp、servlet、JDBC等技术搭建后端CRUD功能；
+          使用JQuery、jsp、css搭建前端页面
+        </p>
+      </div>
+
+      <div class="project-info">
+        <p>
+          <strong>2021.7-2022.7</strong> &nbsp;&nbsp;<strong>基于深度强化学习的公共排队决策分配算法研究</strong>
+        </p>
+        <p>项目内容:
+          使用python搭建强化学习仿真环境，使用Tianshou框架编写实现深度强化学习Deep Q-learning
+          算法。
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2><a name="a4">语言技能</a></h2>
+      <hr>
+      <dl>
+        <dt><strong>Web前端开发技术</strong></dt>
+        <dd>
+          Html | CSS | JavaScript | Vue.js
+        </dd>
+        <dt><strong>Web后端开发技术</strong></dt>
+        <dd>
+          Java | SpringBoot | MyBatis | MySQL
+        </dd>
+        <dt><strong>编程语言</strong></dt>
+        <dd>Java | Python | Golang</dd>
+      </dl>
+    </section>
+  </div>
+  </main>
+
+</body>
+
+</html>

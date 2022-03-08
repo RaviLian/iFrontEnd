@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <title>Forms Review</title>
+  </head>
+  <body>
+    <section id="overlay">
+
+      <p id="logo">Order your milktea!</p>
+      <hr>
+      <!--在这里进行您的代码编写-->
+      <form action="./submission.html" method="post">
+        <label for="milkTea">你想要什么口味的奶茶？</label>
+        <input type="text" name="milkTea" id="milkTea" maxlength="10" minlength="2">
+        <hr>
+        <!-- input的value属性是给后台提供值，name属性规定input元素名称，checked属性加上表明默认选中 -->
+        <label for="numsOfBottle">你想要几杯？</label>
+        <input type="number" id="numsOfBottle">
+        <hr>
+        <label for="rangeOfSuger">你需要的糖分量</label> <br>
+        无糖<input type="range" id="rangeOfSuger" htmlattrdefmin="1" htmlattrdefmax="5">全糖
+        <hr>
+        <label for="materials">你想要什么顶料？</label> <br>
+        <input type="checkbox" value="冰淇淋" name="materials">冰淇淋 &nbsp;&nbsp;
+        <input type="checkbox" value="奶盖" name="materials">奶盖 &nbsp;&nbsp;
+        <input type="checkbox" value="可可粉" name="materials">可可粉 &nbsp;&nbsp;
+        <hr>
+        <label for="addIce">你需要加冰吗？</label> <br>
+        <input type="radio" name="addIce" value="Yes" id="addIceYes"> <label for="addIceYes">Yes</label> &nbsp;&nbsp;
+        <input type="radio" name="addIce" value="No" id="addIceNo"> <label for="addIceNo">No</label>
+        <hr>
+        <label for="needAddM">你需要加什么料?</label>
+        <select name="needAddM" id="needAddM">
+          <option value="珍珠"> 珍珠</option>
+          <option value="波霸"> 波霸</option>
+          <option value="布丁"> 布丁</option>
+        </select>
+        <hr>
+        <label for="size-choice" >你要什么规格</label>
+        <input list="size" name="size-choice">
+        <datalist id="size">
+          <option value="1">小杯</option>
+          <option value="2">中杯</option>
+          <option value="3">大杯</option>
+        </datalist>
+        <hr>
+        <label for="reqs">您还有别的什么要求吗</label> <br>
+        <textarea name="reqs" id="reqs" cols="40" rows="5">
+        </textarea>
+        <hr>
+        <label for="phone">您的联系方式：</label>
+        <input type="tel" maxlength="11">
+        <hr>
+        <button type="submit">submit</button>
+      </form>
+    </section>
+  </body>
+</html>
